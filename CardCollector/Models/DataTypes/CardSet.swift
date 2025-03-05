@@ -13,8 +13,8 @@ struct CardSet: Codable {
     let series: String
     let printedTotal: Int
     let total: Int
-    let legalities: CardSetLegality
-    let ptcgoCode: String
+    let legalities: CardSetLegality?
+    let ptcgoCode: String?
     let releaseDate: String
     let updatedAt: String
     let images: CardSetImage

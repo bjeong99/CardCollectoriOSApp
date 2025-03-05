@@ -8,7 +8,7 @@
 import Foundation
 
 struct CardSetLegality: Codable {
-    let standard: String
-    let unlimited: String
-    let expanded: String
+    let standard: String?
+    let unlimited: String?
+    let expanded: String?
 }
