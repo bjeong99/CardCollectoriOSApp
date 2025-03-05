@@ -6,30 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7D31B5A72D77F3F600098688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D31B5A02D77F3F600098688 /* Assets.xcassets */; };
+		7D31B5A92D77F3F600098688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D31B5A32D77F3F600098688 /* LaunchScreen.storyboard */; };
+		7D31B5AA2D77F3F600098688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B59F2D77F3F600098688 /* AppDelegate.swift */; };
+		7D31B5AB2D77F3F600098688 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5A42D77F3F600098688 /* SceneDelegate.swift */; };
+		7D31B5AC2D77F3F600098688 /* CardTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5A52D77F3F600098688 /* CardTabViewController.swift */; };
+		7D31B5B72D77F4B300098688 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5B62D77F4B300098688 /* CardData.swift */; };
+		7D31B5B92D77F4C300098688 /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5B82D77F4C300098688 /* CardSet.swift */; };
+		7D31B5BC2D77F4EA00098688 /* CardRarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5BB2D77F4EA00098688 /* CardRarity.swift */; };
+		7D31B5BF2D77F5AF00098688 /* CardSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5BE2D77F5AF00098688 /* CardSetViewController.swift */; };
+		7D31B5C12D77F5C500098688 /* CardPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5C02D77F5C500098688 /* CardPortfolioViewController.swift */; };
+		7D31B5C32D77F5E000098688 /* CardSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5C22D77F5E000098688 /* CardSettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7D31B5832D77F1DC00098688 /* CardCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D31B59F2D77F3F600098688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D31B5A02D77F3F600098688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D31B5A12D77F3F600098688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D31B5A22D77F3F600098688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D31B5A42D77F3F600098688 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7D31B5A52D77F3F600098688 /* CardTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabViewController.swift; sourceTree = "<group>"; };
+		7D31B5B62D77F4B300098688 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		7D31B5B82D77F4C300098688 /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
+		7D31B5BB2D77F4EA00098688 /* CardRarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRarity.swift; sourceTree = "<group>"; };
+		7D31B5BE2D77F5AF00098688 /* CardSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetViewController.swift; sourceTree = "<group>"; };
+		7D31B5C02D77F5C500098688 /* CardPortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPortfolioViewController.swift; sourceTree = "<group>"; };
+		7D31B5C22D77F5E000098688 /* CardSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7D31B5952D77F1DF00098688 /* Exceptions for "CardCollector" folder in "CardCollector" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 7D31B5822D77F1DC00098688 /* CardCollector */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		7D31B5852D77F1DC00098688 /* CardCollector */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7D31B5952D77F1DF00098688 /* Exceptions for "CardCollector" folder in "CardCollector" target */,
-			);
-			path = CardCollector;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7D31B5802D77F1DC00098688 /* Frameworks */ = {
@@ -45,7 +50,7 @@
 		7D31B57A2D77F1DC00098688 = {
 			isa = PBXGroup;
 			children = (
-				7D31B5852D77F1DC00098688 /* CardCollector */,
+				7D31B5A62D77F3F600098688 /* CardCollector */,
 				7D31B5842D77F1DC00098688 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +61,89 @@
 				7D31B5832D77F1DC00098688 /* CardCollector.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7D31B5A62D77F3F600098688 /* CardCollector */ = {
+			isa = PBXGroup;
+			children = (
+				7D31B5B32D77F42C00098688 /* Resources */,
+				7D31B5B22D77F42800098688 /* Managers */,
+				7D31B5B12D77F41C00098688 /* APIClient */,
+				7D31B5B02D77F40C00098688 /* Models */,
+				7D31B5AF2D77F40400098688 /* Controllers */,
+				7D31B5AE2D77F3FF00098688 /* ViewModels */,
+				7D31B5AD2D77F3FB00098688 /* Views */,
+				7D31B5A12D77F3F600098688 /* Info.plist */,
+			);
+			path = CardCollector;
+			sourceTree = "<group>";
+		};
+		7D31B5AD2D77F3FB00098688 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D31B5AE2D77F3FF00098688 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7D31B5AF2D77F40400098688 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D31B5BD2D77F58200098688 /* Core */,
+				7D31B5A52D77F3F600098688 /* CardTabViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7D31B5B02D77F40C00098688 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D31B5B62D77F4B300098688 /* CardData.swift */,
+				7D31B5B82D77F4C300098688 /* CardSet.swift */,
+				7D31B5BB2D77F4EA00098688 /* CardRarity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D31B5B12D77F41C00098688 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		7D31B5B22D77F42800098688 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7D31B5B32D77F42C00098688 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D31B5A02D77F3F600098688 /* Assets.xcassets */,
+				7D31B5A32D77F3F600098688 /* LaunchScreen.storyboard */,
+				7D31B5A42D77F3F600098688 /* SceneDelegate.swift */,
+				7D31B59F2D77F3F600098688 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7D31B5BD2D77F58200098688 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7D31B5BE2D77F5AF00098688 /* CardSetViewController.swift */,
+				7D31B5C02D77F5C500098688 /* CardPortfolioViewController.swift */,
+				7D31B5C22D77F5E000098688 /* CardSettingsViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +160,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				7D31B5852D77F1DC00098688 /* CardCollector */,
 			);
 			name = CardCollector;
 			packageProductDependencies = (
@@ -122,6 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D31B5A72D77F3F600098688 /* Assets.xcassets in Resources */,
+				7D31B5A92D77F3F600098688 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +219,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D31B5AA2D77F3F600098688 /* AppDelegate.swift in Sources */,
+				7D31B5C12D77F5C500098688 /* CardPortfolioViewController.swift in Sources */,
+				7D31B5BF2D77F5AF00098688 /* CardSetViewController.swift in Sources */,
+				7D31B5B92D77F4C300098688 /* CardSet.swift in Sources */,
+				7D31B5B72D77F4B300098688 /* CardData.swift in Sources */,
+				7D31B5C32D77F5E000098688 /* CardSettingsViewController.swift in Sources */,
+				7D31B5AB2D77F3F600098688 /* SceneDelegate.swift in Sources */,
+				7D31B5BC2D77F4EA00098688 /* CardRarity.swift in Sources */,
+				7D31B5AC2D77F3F600098688 /* CardTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D31B5A32D77F3F600098688 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D31B5A22D77F3F600098688 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7D31B5972D77F1DF00098688 /* Debug */ = {
@@ -149,7 +256,6 @@
 				INFOPLIST_FILE = CardCollector/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -176,7 +282,6 @@
 				INFOPLIST_FILE = CardCollector/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
