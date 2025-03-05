@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+/// Controller to house tabs
 final class CardTabBarController: UITabBarController {
 
     override func viewDidLoad() {

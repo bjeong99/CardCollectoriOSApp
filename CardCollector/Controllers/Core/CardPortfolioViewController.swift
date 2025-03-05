@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+/// Controller to show personal card portfolio
 final class CardPortfolioViewController: UIViewController {
 
     override func viewDidLoad() {

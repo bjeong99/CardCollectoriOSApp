@@ -18,6 +18,17 @@
 		7D31B5BF2D77F5AF00098688 /* CardSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5BE2D77F5AF00098688 /* CardSetViewController.swift */; };
 		7D31B5C12D77F5C500098688 /* CardPortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5C02D77F5C500098688 /* CardPortfolioViewController.swift */; };
 		7D31B5C32D77F5E000098688 /* CardSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5C22D77F5E000098688 /* CardSettingsViewController.swift */; };
+		7D31B5C72D78008800098688 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5C62D78008800098688 /* CardService.swift */; };
+		7D31B5C92D7800A600098688 /* CardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5C82D7800A600098688 /* CardRequest.swift */; };
+		7D31B5CB2D78018700098688 /* CardEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5CA2D78018700098688 /* CardEndpoint.swift */; };
+		7D31B5CD2D78087E00098688 /* CardAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5CC2D78087E00098688 /* CardAttack.swift */; };
+		7D31B5CF2D7808EC00098688 /* CardWeaknessOrResistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5CE2D7808EC00098688 /* CardWeaknessOrResistance.swift */; };
+		7D31B5D12D7809A500098688 /* CardSetLegality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5D02D7809A500098688 /* CardSetLegality.swift */; };
+		7D31B5D32D7809D300098688 /* CardSetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5D22D7809D300098688 /* CardSetImage.swift */; };
+		7D31B5D52D780A3200098688 /* CardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5D42D780A3200098688 /* CardImage.swift */; };
+		7D31B5D72D780A7200098688 /* CardTCGPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5D62D780A7200098688 /* CardTCGPlayer.swift */; };
+		7D31B5D92D780AB300098688 /* CardPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5D82D780AB300098688 /* CardPrice.swift */; };
+		7D31B5DB2D780B9C00098688 /* CardAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D31B5DA2D780B9C00098688 /* CardAbility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +45,17 @@
 		7D31B5BE2D77F5AF00098688 /* CardSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetViewController.swift; sourceTree = "<group>"; };
 		7D31B5C02D77F5C500098688 /* CardPortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPortfolioViewController.swift; sourceTree = "<group>"; };
 		7D31B5C22D77F5E000098688 /* CardSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSettingsViewController.swift; sourceTree = "<group>"; };
+		7D31B5C62D78008800098688 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		7D31B5C82D7800A600098688 /* CardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRequest.swift; sourceTree = "<group>"; };
+		7D31B5CA2D78018700098688 /* CardEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEndpoint.swift; sourceTree = "<group>"; };
+		7D31B5CC2D78087E00098688 /* CardAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAttack.swift; sourceTree = "<group>"; };
+		7D31B5CE2D7808EC00098688 /* CardWeaknessOrResistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWeaknessOrResistance.swift; sourceTree = "<group>"; };
+		7D31B5D02D7809A500098688 /* CardSetLegality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetLegality.swift; sourceTree = "<group>"; };
+		7D31B5D22D7809D300098688 /* CardSetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetImage.swift; sourceTree = "<group>"; };
+		7D31B5D42D780A3200098688 /* CardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImage.swift; sourceTree = "<group>"; };
+		7D31B5D62D780A7200098688 /* CardTCGPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTCGPlayer.swift; sourceTree = "<group>"; };
+		7D31B5D82D780AB300098688 /* CardPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPrice.swift; sourceTree = "<group>"; };
+		7D31B5DA2D780B9C00098688 /* CardAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAbility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				7D31B5BD2D77F58200098688 /* Core */,
-				7D31B5A52D77F3F600098688 /* CardTabViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -107,6 +128,14 @@
 				7D31B5B62D77F4B300098688 /* CardData.swift */,
 				7D31B5B82D77F4C300098688 /* CardSet.swift */,
 				7D31B5BB2D77F4EA00098688 /* CardRarity.swift */,
+				7D31B5CC2D78087E00098688 /* CardAttack.swift */,
+				7D31B5CE2D7808EC00098688 /* CardWeaknessOrResistance.swift */,
+				7D31B5D02D7809A500098688 /* CardSetLegality.swift */,
+				7D31B5D22D7809D300098688 /* CardSetImage.swift */,
+				7D31B5D42D780A3200098688 /* CardImage.swift */,
+				7D31B5D62D780A7200098688 /* CardTCGPlayer.swift */,
+				7D31B5D82D780AB300098688 /* CardPrice.swift */,
+				7D31B5DA2D780B9C00098688 /* CardAbility.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,6 +143,9 @@
 		7D31B5B12D77F41C00098688 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				7D31B5C62D78008800098688 /* CardService.swift */,
+				7D31B5C82D7800A600098688 /* CardRequest.swift */,
+				7D31B5CA2D78018700098688 /* CardEndpoint.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -142,6 +174,7 @@
 				7D31B5BE2D77F5AF00098688 /* CardSetViewController.swift */,
 				7D31B5C02D77F5C500098688 /* CardPortfolioViewController.swift */,
 				7D31B5C22D77F5E000098688 /* CardSettingsViewController.swift */,
+				7D31B5A52D77F3F600098688 /* CardTabViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -219,12 +252,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D31B5CB2D78018700098688 /* CardEndpoint.swift in Sources */,
+				7D31B5D72D780A7200098688 /* CardTCGPlayer.swift in Sources */,
+				7D31B5C72D78008800098688 /* CardService.swift in Sources */,
+				7D31B5CF2D7808EC00098688 /* CardWeaknessOrResistance.swift in Sources */,
+				7D31B5C92D7800A600098688 /* CardRequest.swift in Sources */,
+				7D31B5CD2D78087E00098688 /* CardAttack.swift in Sources */,
 				7D31B5AA2D77F3F600098688 /* AppDelegate.swift in Sources */,
+				7D31B5D32D7809D300098688 /* CardSetImage.swift in Sources */,
 				7D31B5C12D77F5C500098688 /* CardPortfolioViewController.swift in Sources */,
+				7D31B5D92D780AB300098688 /* CardPrice.swift in Sources */,
 				7D31B5BF2D77F5AF00098688 /* CardSetViewController.swift in Sources */,
+				7D31B5D12D7809A500098688 /* CardSetLegality.swift in Sources */,
 				7D31B5B92D77F4C300098688 /* CardSet.swift in Sources */,
 				7D31B5B72D77F4B300098688 /* CardData.swift in Sources */,
 				7D31B5C32D77F5E000098688 /* CardSettingsViewController.swift in Sources */,
+				7D31B5D52D780A3200098688 /* CardImage.swift in Sources */,
+				7D31B5DB2D780B9C00098688 /* CardAbility.swift in Sources */,
 				7D31B5AB2D77F3F600098688 /* SceneDelegate.swift in Sources */,
 				7D31B5BC2D77F4EA00098688 /* CardRarity.swift in Sources */,
 				7D31B5AC2D77F3F600098688 /* CardTabViewController.swift in Sources */,
