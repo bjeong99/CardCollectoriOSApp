@@ -41,19 +41,34 @@ class CardSetCollectionViewCell: UICollectionViewCell {
         contentView.backgroundColor = .secondarySystemBackground
         contentView.addSubviews(imageView, nameLabel, seriesLabel)
         addConstraints()
+        setUpLayer()
     }
     
     required init?(coder: NSCoder) {
         fatalError("Unsupported")
     }
     
+    private func setUpLayer() {
+        contentView.layer.cornerRadius = 8
+    }
+    
     private func addConstraints() {
         NSLayoutConstraint.activate([
-            nameLabel.heightAnchor.constraint(equalToConstant: 50),
-            seriesLabel.heightAnchor.constraint(equalToConstant: 50),
+            nameLabel.heightAnchor.constraint(equalToConstant: 20),
+            seriesLabel.heightAnchor.constraint(equalToConstant: 15),
             
-            nameLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5)
-
+            nameLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5),
+            nameLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5),
+            seriesLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5),
+            seriesLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5),
+            
+            nameLabel.bottomAnchor.constraint(equalTo: seriesLabel.topAnchor, constant: -3),
+            seriesLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -3),
+            
+            imageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5),
+            imageView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5),
+            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            imageView.bottomAnchor.constraint(equalTo: nameLabel.topAnchor, constant: -3)
         ])
     }
     
@@ -65,6 +80,18 @@ class CardSetCollectionViewCell: UICollectionViewCell {
     }
     
     public func configure(with viewModel: CardSetCollectionViewCellViewModel) {
-        
+        nameLabel.text = viewModel.setName
+        seriesLabel.text = viewModel.setSeries
+        viewModel.fetchImage { [weak self] result in
+            switch result {
+            case .success(let data):
+                DispatchQueue.main.async {
+                    let image = UIImage(data: data)
+                    self?.imageView.image = image
+                }
+            case .failure(let error):
+                break
+            }
+        }
     }
 }

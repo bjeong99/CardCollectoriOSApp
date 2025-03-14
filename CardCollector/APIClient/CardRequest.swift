@@ -75,5 +75,17 @@ final class CardRequest {
 extension CardRequest {
     
     /// pre-set endpoint to get all sets
-    static let listCardSetsRequest = CardRequest(endpoint: CardEndpoint.sets)
+    static let listCardSetsRequest =
+        CardRequest(
+            endpoint: CardEndpoint.sets,
+            queryParameters: [URLQueryItem(name: "orderBy", value: "-releaseDate")])
+    
+    static public func searchCardSetsRequest(searchString: String) -> CardRequest {
+        return CardRequest(
+            endpoint: CardEndpoint.sets,
+            queryParameters: [
+                URLQueryItem(name: "q", value: "name:\(searchString)*"),
+                URLQueryItem(name: "orderBy", value: "-releaseDate")
+            ])
+    }
 }

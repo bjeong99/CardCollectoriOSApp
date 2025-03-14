@@ -22,7 +22,7 @@ final class CardSetViewController: UIViewController {
             setListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             setListView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
             setListView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
-            setListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            setListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5)
         ])
     }
 

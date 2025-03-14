@@ -8,8 +8,8 @@
 import Foundation
 
 final class CardSetCollectionViewCellViewModel {
-    private let setName: String
-    private let setSeries: String
+    public let setName: String
+    public let setSeries: String
     private let setImageUrl: URL?
     
     init(

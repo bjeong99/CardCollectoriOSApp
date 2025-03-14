@@ -8,12 +8,38 @@
 import Foundation
 import UIKit
 
+protocol SetListViewViewModelDelegate: AnyObject {
+    func didLoadInitialCardSets()
+}
+
 final class SetListViewViewModel: NSObject {
-    func fetchSets() {
-        CardService.shared.execute(CardRequest.listCardSetsRequest, expecting: GetAllSetsResponse.self) { result in
+    
+    public weak var delegate: SetListViewViewModelDelegate?
+    
+    private var cardSets: [CardSet] = [] {
+        didSet {
+            cellViewModels.removeAll()
+            for cardSet in cardSets {
+                cellViewModels.append(
+                    CardSetCollectionViewCellViewModel(setName: cardSet.name, setSeries: cardSet.series, setImageUrl: URL(string: cardSet.images.logo))
+                )
+            }
+        }
+    }
+    
+    private var cellViewModels: [CardSetCollectionViewCellViewModel] = []
+    
+    public func fetchSets(searchText: String? = nil) {
+        let request = (searchText != nil) ? CardRequest.searchCardSetsRequest(searchString: searchText!) : CardRequest.listCardSetsRequest
+        CardService.shared.execute(request, expecting: GetAllSetsResponse.self) { [weak self] result in
             switch result {
-            case .success(let model):
-                print(String(describing: model))
+            case .success(let responseModel):
+                let results = responseModel.data
+                print(results.count)
+                self?.cardSets = results
+                DispatchQueue.main.async {
+                    self?.delegate?.didLoadInitialCardSets()
+                }
             case .failure(let error):
                 print(String(describing: error))
             }
@@ -23,7 +49,7 @@ final class SetListViewViewModel: NSObject {
 
 extension SetListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return cellViewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -31,7 +57,7 @@ extension SetListViewViewModel: UICollectionViewDataSource, UICollectionViewDele
         ) as? CardSetCollectionViewCell else {
             fatalError("Unsupported Cell")
         }
-        let viewModel = CardSetCollectionViewCellViewModel(setName: "Brian", setSeries: "Jeong", setImageUrl: nil)
+        let viewModel = cellViewModels[indexPath.row]
         cell.configure(with: viewModel)
         return cell
     }
