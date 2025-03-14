@@ -11,19 +11,19 @@ import UIKit
 /// Controller to show sets
 final class CardSetViewController: UIViewController {
 
+    private let setListView = SetListView()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         title = "Sets"
-
-        CardService.shared.execute(CardRequest.listCardSetsRequest, expecting: GetAllSetsResponse.self) { result in
-            switch result {
-            case .success(let model):
-                print(String(describing: model))
-            case .failure(let error):
-                print(String(describing: error))
-            }
-        }
+        
+        view.addSubview(setListView)
+        NSLayoutConstraint.activate([
+            setListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            setListView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            setListView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
+            setListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
     }
 
 }
